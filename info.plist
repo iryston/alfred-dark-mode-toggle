@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>com.iryston.darkmode</string>
+	<string>net.iryston.darkmode</string>
 	<key>category</key>
 	<string>Productivity</string>
 	<key>connections</key>
@@ -216,6 +216,10 @@ end tell</string>
 				<false/>
 				<key>focusedappvariablename</key>
 				<string></string>
+				<key>hotkey</key>
+				<integer>0</integer>
+				<key>hotmod</key>
+				<integer>0</integer>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -310,6 +314,10 @@ end tell</string>
 				<false/>
 				<key>focusedappvariablename</key>
 				<string></string>
+				<key>hotkey</key>
+				<integer>0</integer>
+				<key>hotmod</key>
+				<integer>0</integer>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -332,7 +340,7 @@ end tell</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>tell application "System Events"	tell appearance preferences		get properties		if dark mode then			set properties to {dark mode:false}		else			set properties to {dark mode:true}		end if	end tellend tell</string>
+				<string>tell application "System Events"	tell appearance preferences		set dark mode to not dark mode	end tellend tell</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -400,6 +408,10 @@ end tell</string>
 				<false/>
 				<key>focusedappvariablename</key>
 				<string></string>
+				<key>hotkey</key>
+				<integer>0</integer>
+				<key>hotmod</key>
+				<integer>0</integer>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -512,8 +524,8 @@ togglemode - Toggle Dark / Light Mode</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.0.0</string>
+	<string>1.0.1</string>
 	<key>webaddress</key>
-	<string>https://github.com/iryston</string>
+	<string>https://github.com/iryston/alfred-dark-mode-toggle</string>
 </dict>
 </plist>
